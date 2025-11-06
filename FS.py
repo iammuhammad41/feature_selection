@@ -8,7 +8,7 @@ from sklearn.metrics import accuracy_score, f1_score
 import pyswarms as ps
 
 # Load the dataset
-excel_file_path = '/content/drive/MyDrive/Colab-Notebooks/ghazi/FS44.xlsx'
+excel_file_path = '/content/drive/MyDrive/Colab-Notebooks/data.xlsx'
 df = pd.read_excel(excel_file_path)
 
 # Display the first few rows to understand the data structure
@@ -113,3 +113,4 @@ def feature_selection(X, y, num_features=5, max_iter=100, num_particles=10):
 if __name__ == "__main__":
     best_features, accuracy, f1 = feature_selection(X, y, num_features=5)
     print(f"Selected Features: {best_features}")
+
